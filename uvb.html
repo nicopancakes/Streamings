@@ -1,0 +1,39 @@
+<style>
+    :root {
+      /* responsive size: min 32px max 120px scales with viewport */
+      --big: clamp(32px, 8vw, 120px);
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      color: #fff;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 700; /* bold */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .centered {
+      text-align: center;
+      font-size: var(--big);
+      line-height: 1;
+      padding: 0 16px; /* prevent clipping on tiny screens */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <div class="centered">frequency : 4625 kHz</div>
+<p> UVB-76<p>
+</body>
+</html>
